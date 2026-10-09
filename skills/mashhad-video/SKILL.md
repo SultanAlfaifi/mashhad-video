@@ -4,7 +4,7 @@ description: "مَشْهَد: design, render, and refine motion-graphics videos,
 license: MIT
 metadata:
   author: "Sultan Alfaifi"
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # مَشْهَد — Mashhad
@@ -49,6 +49,8 @@ For a new visual direction, read [art-direction.md](references/art-direction.md)
 Use [motion-recipes.md](references/motion-recipes.md) for kinetic type, continuous UI morphing, data stories, documentary collage, depth captions, painterly motion, and procedural 3D. Select a visual mechanism that expresses the content; vary rhythm and staging within a consistent system. Sound, typography, space, and transition intent are first-class design decisions. Complexity and effect count are not quality metrics.
 
 For Arabic or any audio work, read [arabic-and-audio.md](references/arabic-and-audio.md). Prefer **Thmanyah Sans** for most Arabic work when the licensed files are supplied through `THMANYAH_FONT_DIR` or a user-provided location; explicit brand/project choices take precedence. Build timing around meaning, reading holds, and the actual voice recording when supplied, without forcing a musical BPM grid. Preserve Arabic shaping and mixed-script direction; test the actual font and output rather than trusting a browser preview alone.
+
+For requested generated narration or sound effects using ElevenLabs, read [elevenlabs-audio.md](references/elevenlabs-audio.md). Prefer an available connected plugin; an existing connection does not require a separate API key. This optional route supports Arabic voice timing and restrained effects without adding narration or music to every film. Keep supplied usable audio when it already meets the brief.
 
 ## Build and integrate
 

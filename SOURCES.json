@@ -4,6 +4,27 @@
   "scope": "Credits for researched integration references and external tools. Not a dependency lockfile. No upstream skill bodies, runtimes, fonts or example media are vendored.",
   "sources": [
     {
+      "project": "elevenlabs/skills",
+      "url": "https://github.com/elevenlabs/skills",
+      "maintainer_account": "elevenlabs",
+      "role": "Official text-to-speech and sound-effects references for optional generated audio",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT for instruction repository; service and generated audio rights are separate",
+      "copyright_notices_observed": [
+        "Copyright (c) 2024 ElevenLabs"
+      ],
+      "license_evidence_url": "https://github.com/elevenlabs/skills/blob/1d08a4a250cff67cc8056ec31587c031ecb06d2f/LICENSE",
+      "license_blob_sha": "61c1c47ce5964af14a44759b75bd61e5925a898c",
+      "repository_commit_observed": "1d08a4a250cff67cc8056ec31587c031ecb06d2f",
+      "reference_paths": [
+        "text-to-speech/SKILL.md",
+        "sound-effects/SKILL.md"
+      ],
+      "generated_media_rights_url": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+      "checked_on": "2026-10-09"
+    },
+    {
       "project": "remotion-dev/skills",
       "url": "https://github.com/remotion-dev/skills",
       "maintainer_account": "remotion-dev",

@@ -31,13 +31,13 @@ Use a representative string such as `مَشْهَد — إطلاق المنتج 
 
 ## Time the voice before polishing motion
 
-For narration-led work, obtain or generate the authorized voice track early. Measure its actual duration, pauses, and stressed words. A word-count estimate helps drafting but does not establish the final timeline. If speech overruns a fixed duration, shorten the script or revise pacing naturally; do not silently accelerate the voice to rescue an overfull storyboard.
+For narration-led work, obtain or generate the authorized voice track early. For optional ElevenLabs generation, use [elevenlabs-audio.md](elevenlabs-audio.md), including its connected-plugin route. Measure the resulting recording's actual duration, pauses, and stressed words. A word-count estimate helps drafting but does not establish the final timeline. If speech overruns a fixed duration, shorten the script or revise pacing naturally; do not silently accelerate the voice to rescue an overfull storyboard.
 
 Build a cue map around meaning: phrase start, stressed word, reveal, breath, and transition. Align major motion to semantic beats and readable holds, without forcing a BPM grid. Leave some events silent. Keep enough stillness after the important reveal for recognition. For captions, use timing from the actual audio and verify phrase breaks, reading order, punctuation, and whether animation delays readability.
 
 ## Default to effects and nonmusical atmosphere
 
-Use sparse transition effects, movement accents, tactile clicks, restrained impacts, and nonmusical environmental sound. Choose a sound because an object arrives, changes, travels, or occupies a space. Avoid a continuous bed when silence makes the message clearer. Shape original effects with controlled noise, envelopes, and filtering, or use assets whose license/permission covers the intended output.
+Use sparse transition effects, movement accents, tactile clicks, restrained impacts, and nonmusical environmental sound. Choose a sound because an object arrives, changes, travels, or occupies a space. Avoid a continuous bed when silence makes the message clearer. For a soft, luxurious brief, favor short air movements and low, rounded tactile clicks with clean tails; avoid sharp swishes and conspicuous synthetic hiss. Select among supplied recordings, licensed effects, optional generation, or procedural synthesis according to the listening result, rather than treating a generated waveform as inherently suitable. Retain the applicable provenance and permission.
 
 Exclude melodies, chords, rhythmic instrumental loops, and tonal pads by default. Calling a track an “ambient background” does not make a musical drone or harmonic pad acceptable. Add music only after an explicit user request; do not revive it from an earlier draft. Preserve supplied/requested narration and its intelligibility. Do not add voices merely to fill silence.
 

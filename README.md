@@ -13,6 +13,7 @@
 مَشْهَد تجمع توجيه الإخراج، اختيار الأدوات، بناء المشاهد، تنسيق الصوت ومراجعة النتيجة في مهارة واحدة. تختار مسارًا مناسبًا للمشروع، وتحمل تفاصيله عند الحاجة. المحركات نفسها متطلبات منفصلة وليست مضمّنة.
 
 - **صوت بلا موسيقى افتراضيًا:** مؤثرات انتقال وحركة وأجواء غير موسيقية، مع مصدر أو ترخيص موثق لكل مادة صوتية. لا ألحان أو تآلفات أو إيقاعات موسيقية، إلا بطلب صريح لاحق.
+- **تعليق عربي اختياري:** مسار ElevenLabs يحترم الصوت الذي تختاره، ويضبط المشاهد وفق التسجيل الفعلي، مع فصل التعليق عن المؤثرات.
 - **عربية مقروءة:** اتجاه صحيح، حروف متصلة، تشكيل واضح، وثمانية Sans خيار مفضّل عند توفره.
 - **محرك رئيسي واحد:** Remotion أو HyperFrames أو Motion Canvas وغيرها، مع محركات متخصصة حين تفيد اللقطة.
 - **تسليم قابل للمراجعة:** توقيت بالإطارات، عقود تبادل الصور والصوت، فحص فيديو، وتمييز واضح بين ما رُندر وما روجع.
@@ -51,6 +52,14 @@ python tools/install.py --agent both --scope project --project /path/to/your/pro
 اختر المحرك المناسب، سلّم الفيديو والمصدر، واذكر الفحوص المنفّذة.
 ```
 
+## تعليق صوتي مع ElevenLabs
+
+عند طلب تعليق أو مؤثرات مولّدة، تستخدم مَشْهَد [مسار ElevenLabs الاختياري](skills/mashhad-video/references/elevenlabs-audio.md). تعطي الأولوية للإضافة المتصلة في المضيف؛ لا تحتاج مفتاح API منفصلًا لهذا المسار. تشغيل API داخل تطبيق مستقل له إعداداته الخاصة. توفر الأدوات والأصوات والتكلفة يعتمد على الاتصال والحساب، والخدمة ليست مضمّنة في المهارة.
+
+يمكنك تحديد `voice_id` بعينه. يُكتب النص المنطوق مستقلًا عن نص الشاشة، وتُقاس مدة التسجيل وحدود عباراته قبل ضبط المشاهد. تبقى المؤثرات والتعليق في مسارين منفصلين، مع الحفاظ على النطق الطبيعي ووقت قراءة الرابط وQR. لا يضيف هذا الخيار موسيقى، ولا يجعل التعليق إلزاميًا لكل فيديو.
+
+ترخيص MIT لتعليمات مَشْهَد ولمرجع [مهارات ElevenLabs الرسمية](https://github.com/elevenlabs/skills) لا يشمل الصوت المولّد تلقائيًا؛ تتبع حقوق استخدامه [شروط الخدمة والخطة المستخدمة](https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform).
+
 ## خط ثمانية
 
 **الخط مدعوم ومستخدم في الإعلان، لكن ملفاته ليست مرفقة.** يُحمّل كل مستخدم نسخته من [ثمانية](https://font.thmanyah.com/). حقوقه لشركة ثمانية؛ يمنع [ترخيصه](https://font.thmanyah.com/licenses) إعادة توزيع ملفات الخط أو استضافتها للتنزيل. ترخيص MIT لهذا المشروع لا يشمل الخط.
@@ -85,6 +94,6 @@ $env:THMANYAH_FONT_DIR = 'D:/Fonts/thmanyah typeface/thmanyahsans'
 
 ## English
 
-Mashhad is a portable motion-design Agent Skill for **Codex and Claude Code**. It routes to a suitable renderer, coordinates frame-based media handoffs, supports Arabic typography, and separates technical checks from visual and listening review. Audio defaults to **SFX and nonmusical ambience only**. Music requires an explicit request.
+Mashhad is a portable motion-design Agent Skill for **Codex and Claude Code**. It routes to a suitable renderer, coordinates frame-based media handoffs, supports Arabic typography, and separates technical checks from visual and listening review. Audio defaults to **SFX and nonmusical ambience only**. Music requires an explicit request. Optional ElevenLabs guidance uses the connected plugin when available, honors the user's selected voice, and aligns motion to the actual recording. Generated media has separate service and usage rights from the skill's MIT license.
 
 Install from this clone with `python tools/install.py --agent both`. Invoke `$mashhad-video` in Codex or `/mashhad-video` in Claude Code. Video runtimes are separate dependencies. Thmanyah Sans is supported through a local font path and is **not redistributed**. Original project files are © 2026 Sultan Alfaifi, MIT; see the third-party notices for independent upstream rights.
