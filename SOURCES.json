@@ -22,7 +22,13 @@
         "sound-effects/SKILL.md"
       ],
       "generated_media_rights_url": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
-      "checked_on": "2026-10-09"
+      "checked_on": "2026-10-09",
+      "official_service_references": [
+        "https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp",
+        "https://elevenlabs.io/text-to-speech/arabic",
+        "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices"
+      ],
+      "reference_notes": "Current hosted OAuth connection, preferred Haytham voice, and expressive-model guidance; hosted service and voice/media rights are independent from the MIT instruction repository."
     },
     {
       "project": "remotion-dev/skills",

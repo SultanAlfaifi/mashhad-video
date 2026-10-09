@@ -1,15 +1,15 @@
 ---
 name: mashhad-video
-description: "مَشْهَد: design, render, and refine motion-graphics videos, animated explainers, product films, and video overlays. Use for video creation or motion-design edits, including Arabic; not ordinary website animation."
+description: "Mashhad: design, render, and refine motion-graphics videos, animated explainers, product films, and video overlays. Use for video creation or motion-design edits, including Arabic; not ordinary website animation."
 license: MIT
 metadata:
   author: "Sultan Alfaifi"
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
-# مَشْهَد — Mashhad
+# Mashhad
 
-Turn the user's idea, assets, or existing footage into an intentional, editable film. Own creative direction, engine selection, scene production, sound, integration, and evidence-based review through one entry point. Speak in the user's language.
+Turn the user's idea, assets, or existing footage into an intentional, editable film. Own creative direction, engine selection, scene production, sound, integration, and evidence-based review through one entry point. Repository instructions are in English; speak with users and create their content in their requested language. This workflow supports professional production, but does not guarantee a professional result from an underspecified prompt or an unreviewed first render.
 
 This is a portable Agent Skill for **Codex and Claude Code**. Its shared core is `SKILL.md`, relative references, and Python standard-library helpers; `agents/openai.yaml` is optional Codex UI metadata. Use the host's available file, shell, browser, and collaboration tools. No host-specific plugin, API, or multi-agent feature is required; sequential execution is supported. Renderer binaries and project dependencies remain separate prerequisites.
 
@@ -19,7 +19,9 @@ This is a portable Agent Skill for **Codex and Claude Code**. Its shared core is
 
 Honor the chosen style, engine, existing project, and authorization. For a small revision, inspect and change the affected shot; preserve its source, timing, and surrounding design. Do not restart discovery or propose alternate engines without a concrete reason.
 
-For new work, recover the message, audience, intended surface, exact copy, duration or voice track, assets, and constraints from the conversation and files. Ask only for missing information that materially changes the result; infer reversible choices and state them briefly. If creative direction is delegated, choose and continue. Do not make approval of every storyboard, frame, or render a universal requirement.
+For a new film, read [onboarding.md](references/onboarding.md) and start with a short creative intake before production: purpose and audience, format and duration, visual direction, copy and brand assets, and audio preference. Ask only the unanswered questions, in the user's language; normally one round of three to five short grouped questions is enough. Wait for the choices that determine the film while continuing independent inspection. If the brief already answers them or the user delegates those choices, proceed without repeating the questionnaire. Do not make approval of every storyboard, frame, or render a universal requirement.
+
+If the user chooses human-sounding AI narration, follow [elevenlabs-audio.md](references/elevenlabs-audio.md): reuse an available connected ElevenLabs integration, or ask the user to install/enable and connect the official plugin first. For Arabic narration, prefer the documented Haytham preset unless the user's voice or accent choice overrides it. Effects-only and supplied-recording projects do not require this setup.
 
 Inspect the selected project's dependencies and available tools. [inspect_environment.py](scripts/inspect_environment.py) is an optional read-only aid, not proof of a functioning renderer. Match commands to the actual OS and installed version. No engine, plugin, MCP server, asset provider, or paid service becomes available merely because this skill mentions it.
 

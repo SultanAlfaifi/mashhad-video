@@ -16,6 +16,9 @@ Observe latency, render attempts, human corrections, crashes, wrong-engine choic
 
 ## Important cases
 
+- A vague new film request receives a short creative intake before production; a complete brief does not receive the same questions again.
+- Human-sounding narration triggers an integration check and setup request only when needed; effects-only and supplied-audio work stay independent.
+- The verified Haytham preference respects explicit language, accent, speaker and supplied-recording choices.
 - Explicit engine/format and existing source are preserved.
 - Arabic shaping and Latin numerals remain readable throughout motion.
 - A small text fix stays local instead of triggering a full redesign.

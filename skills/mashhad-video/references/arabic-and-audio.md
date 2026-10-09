@@ -4,7 +4,7 @@ Read when Arabic, mixed-direction text, captions, narration, or any audio matter
 
 ## Preferred Arabic typeface
 
-Default to **Thmanyah Sans (ثمانية Sans)** for most Arabic titles, body copy, captions, and product labels when the font is available with suitable permission. An explicit brand system, existing project typography, or requested alternative takes precedence. Serif variants are not the default.
+Default to **Thmanyah Sans** for most Arabic titles, body copy, captions, and product labels when the font is available with suitable permission. An explicit brand system, existing project typography, or requested alternative takes precedence. Serif variants are not the default.
 
 Resolve the font from `THMANYAH_FONT_DIR` or an explicit user-provided location. The directory can point to `thmanyahsans/`, or to its parent containing that folder. The following filenames and OTF weight metadata were verified in a supplied family on 2026-10-09; verify the available files in each environment:
 

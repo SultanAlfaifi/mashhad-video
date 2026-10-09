@@ -1,27 +1,36 @@
 <div align="center">
 
-# مَشْهَد · Mashhad
+# Mashhad
 
-**من الفكرة إلى الفيديو — مهارة إخراج موشن قرافيك لـ Codex وClaude Code.**
+**From idea to finished motion design — an Agent Skill for Codex and Claude Code.**
 
-[![مَشْهَد — إعلان دون موسيقى](docs/media/poster.jpg)](docs/media/mashhad-ad-sfx-1080p.mp4)
+[![Mashhad — music-free SFX demo](docs/media/poster.jpg)](docs/media/mashhad-ad-sfx-1080p.mp4)
 
-[شاهد الإعلان](docs/media/mashhad-ad-sfx-1080p.mp4) · [المهارة](skills/mashhad-video/SKILL.md) · [الحقوق والمصادر](THIRD_PARTY_NOTICES.md) · [English](#english)
+[Watch the SFX demo](docs/media/mashhad-ad-sfx-1080p.mp4) · [Skill](skills/mashhad-video/SKILL.md) · [Credits and rights](THIRD_PARTY_NOTICES.md)
 
 </div>
 
-مَشْهَد تجمع توجيه الإخراج، اختيار الأدوات، بناء المشاهد، تنسيق الصوت ومراجعة النتيجة في مهارة واحدة. تختار مسارًا مناسبًا للمشروع، وتحمل تفاصيله عند الحاجة. المحركات نفسها متطلبات منفصلة وليست مضمّنة.
+Mashhad brings creative direction, renderer selection, scene construction, audio coordination, and review into one portable skill. It selects a suitable production route and loads detailed guidance as needed. Video engines and external services are separate dependencies.
 
-- **صوت بلا موسيقى افتراضيًا:** مؤثرات انتقال وحركة وأجواء غير موسيقية، مع مصدر أو ترخيص موثق لكل مادة صوتية. لا ألحان أو تآلفات أو إيقاعات موسيقية، إلا بطلب صريح لاحق.
-- **تعليق عربي اختياري:** مسار ElevenLabs يحترم الصوت الذي تختاره، ويضبط المشاهد وفق التسجيل الفعلي، مع فصل التعليق عن المؤثرات.
-- **عربية مقروءة:** اتجاه صحيح، حروف متصلة، تشكيل واضح، وثمانية Sans خيار مفضّل عند توفره.
-- **محرك رئيسي واحد:** Remotion أو HyperFrames أو Motion Canvas وغيرها، مع محركات متخصصة حين تفيد اللقطة.
-- **تسليم قابل للمراجعة:** توقيت بالإطارات، عقود تبادل الصور والصوت، فحص فيديو، وتمييز واضح بين ما رُندر وما روجع.
-- **توافق المضيف:** تعليمات مشتركة لـ Codex وClaude Code؛ العمل المتتابع متاح، ولا تحتاج أدوات تعاون خاصة بأحدهما.
+Documentation, instructions, and interface descriptions are written in English. Arabic text is retained only as intentional demo artwork and language-specific typography/test content.
 
-## التثبيت
+- **A brief before production:** a few focused questions establish the purpose, visual direction, format, assets, and sound. Questions and creative work follow the user's language; repository instructions are in English.
+- **Music-free by default:** transition effects, movement sounds, and nonmusical ambience, with recorded provenance or licensing. Music requires an explicit request.
+- **Optional human-sounding AI narration:** the ElevenLabs route uses the actual recording to time scenes and keeps voice and effects in separate tracks.
+- **Readable Arabic:** correct direction, connected lettering, clear diacritics, and a preference for locally available Thmanyah Sans.
+- **One primary renderer:** Remotion, HyperFrames, Motion Canvas, or another suitable engine, with specialist tools where a shot benefits from them.
+- **Reviewable delivery:** frame-based timing, explicit media handoffs, decoded-media checks, and clear separation between rendered, technically checked, and creatively reviewed results.
+- **Portable instructions:** the same core works with Codex and Claude Code, including sequential execution without host-specific collaboration tools.
 
-Python 3.10+ وGit يكفيان لنسخ المهارة. لا يثبّت الأمر التالي أي محرّك فيديو أو تطبيق أو خدمة مدفوعة.
+## What to expect
+
+Mashhad provides a production workflow, not a guarantee of a professional result from an unspecified first prompt. The result depends on the brief, available assets and runtimes, creative decisions, and review of the rendered video. A strong result normally includes a short direction check, a representative preview, and refinement before the final render.
+
+The linked public demo is the original **SFX-only** version. Its source is included. The later Haytham narration experiment is not part of that published demo or its reproducible source.
+
+## Install
+
+Python 3.10+ and Git are sufficient to copy the skill. These commands do not install a video engine, application, or paid service.
 
 ```sh
 git clone https://github.com/SultanAlfaifi/mashhad-video.git
@@ -29,71 +38,85 @@ cd mashhad-video
 python tools/install.py --agent both
 ```
 
-اختر `--agent codex` أو `--agent claude` لتثبيتها في أحدهما فقط. للتثبيت داخل مشروع:
+Choose `--agent codex` or `--agent claude` to install for one host. For a project-local installation:
 
 ```sh
 python tools/install.py --agent both --scope project --project /path/to/your/project
 ```
 
-| المضيف | المسار الشخصي | الاستدعاء |
+| Host | User installation | Invocation |
 | --- | --- | --- |
 | Codex | `~/.agents/skills/mashhad-video` | `$mashhad-video` |
 | Claude Code | `~/.claude/skills/mashhad-video` | `/mashhad-video` |
 
-المثبّت يرفض استبدال مهارة موجودة، ويتعرف على مسار Codex الأقدم `~/.codex/skills` عند وجود النسخة هناك، لتجنب تكرارها. استخدم `--dry-run` لمعاينة الوجهات. احفظ تخصيصات نسختك قبل استبدالها. واجهة `agents/openai.yaml` اختيارية خاصة بـCodex، بينما النواة واحدة.
+The installer refuses to replace an existing skill. It recognizes an existing installation in the older Codex location, `~/.codex/skills`, to avoid duplication. Use `--dry-run` to inspect destinations, and preserve local customizations before replacing an installation. `agents/openai.yaml` is optional Codex interface metadata; the skill core is shared.
 
-في Claude/Cowork السحابي، مجلد المهارات المحلي لا ينتقل تلقائيًا؛ فعّل المهارة عبر إدارة المهارات في حسابك، وتأكد من توفر أدوات التنفيذ في البيئة. انظر [وثائق Claude الرسمية](https://code.claude.com/docs/en/skills) و[وثائق Codex الرسمية](https://developers.openai.com/codex/skills).
+A local skills folder does not automatically transfer into a cloud Claude/Cowork environment. Enable the skill through that environment's supported skill management and confirm that execution tools are available. See the official [Claude Code documentation](https://code.claude.com/docs/en/skills) and [Codex documentation](https://developers.openai.com/codex/skills).
 
-## مثال طلب
+## Start with a short brief
+
+Before writing the final script or building scenes, ask only about unresolved choices. Use the user's language, combine related questions, and avoid repeating information already supplied. Cover three to five topics as needed:
+
+1. **Purpose and audience:** What should the viewer understand or do? Who is the video for, and what is the call to action?
+2. **Delivery:** Where will it appear? What aspect ratio, duration, and output language are needed?
+3. **Visual direction:** What mood and design style fit the brand? Is there a reference, or should Mashhad propose two or three concrete directions?
+4. **Content and assets:** Is there approved copy, a logo, a product image, brand colors, or a required font? Which details must appear?
+5. **Sound:** Should the video use effects only or human-sounding AI narration? If narrated, what language, accent, and energy should the voice have?
+
+Summarize the agreed direction in a compact brief, identify any remaining assumptions, and proceed with the requested work. If the user has already provided a complete brief or asked Mashhad to choose, use those instructions without an unnecessary questionnaire.
+
+## Example request
 
 ```text
-اصنع إعلانًا عربيًا من 20 ثانية لمنتجي، بخط ثمانية Sans.
-استخدم مؤثرات انتقال وأجواء خلفية فقط، دون موسيقى.
-اختر المحرك المناسب، سلّم الفيديو والمصدر، واذكر الفحوص المنفّذة.
+Create a 20-second Arabic product ad for social media, using Thmanyah Sans.
+Ask me about any missing audience, format, design, or content choices first.
+Use an energetic, human-sounding Arabic AI voice and subtle transition effects,
+with no music. Prefer Haytham through the ElevenLabs plugin.
+Deliver the rendered video and editable source, and state which reviews passed.
 ```
 
-## تعليق صوتي مع ElevenLabs
+## Narration with ElevenLabs
 
-عند طلب تعليق أو مؤثرات مولّدة، تستخدم مَشْهَد [مسار ElevenLabs الاختياري](skills/mashhad-video/references/elevenlabs-audio.md). تعطي الأولوية للإضافة المتصلة في المضيف؛ لا تحتاج مفتاح API منفصلًا لهذا المسار. تشغيل API داخل تطبيق مستقل له إعداداته الخاصة. توفر الأدوات والأصوات والتكلفة يعتمد على الاتصال والحساب، والخدمة ليست مضمّنة في المهارة.
+When the user wants human-sounding narration, use the [optional ElevenLabs route](skills/mashhad-video/references/elevenlabs-audio.md). This produces **AI-generated speech**, not a live human recording.
 
-يمكنك تحديد `voice_id` بعينه. يُكتب النص المنطوق مستقلًا عن نص الشاشة، وتُقاس مدة التسجيل وحدود عباراته قبل ضبط المشاهد. تبقى المؤثرات والتعليق في مسارين منفصلين، مع الحفاظ على النطق الطبيعي ووقت قراءة الرابط وQR. لا يضيف هذا الخيار موسيقى، ولا يجعل التعليق إلزاميًا لكل فيديو.
+- Reuse an already connected ElevenLabs plugin or MCP connector.
+- If no connection is available, ask the user to install and connect the ElevenLabs plugin through their host's supported setup. For Claude Code or another MCP client, use the official [hosted MCP connection guide](https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp). Continue independent planning while the connection is being set up.
+- Do not ask for a separate API key when the connected plugin already provides the required tools. An independently built API application has its own setup requirements.
+- For an **energetic Arabic advertisement**, the project owner's preferred starting voice is **Haytham – Conversation**, `IES4nrmZdUBHByLBde0P`, used in the later narration experiment. Check that this exact voice is available through the connection before generation. Honor a different user selection, and do not silently substitute another voice if Haytham is unavailable.
+- Preview a short relevant passage when the voice has not already been accepted or its selection delegated. Reuse an accepted voice without another audition gate. Assess pronunciation, accent, pacing, and fit with the design; a voice name alone does not establish quality.
 
-ترخيص MIT لتعليمات مَشْهَد ولمرجع [مهارات ElevenLabs الرسمية](https://github.com/elevenlabs/skills) لا يشمل الصوت المولّد تلقائيًا؛ تتبع حقوق استخدامه [شروط الخدمة والخطة المستخدمة](https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform).
+Write spoken copy separately from screen text. Measure the generated recording and phrase boundaries before setting final scene timing. Keep effects below the narration, preserve natural delivery, and leave enough time to read the link and scan the QR code. Narration remains optional and does not add music.
 
-## خط ثمانية
+Tool availability, voices, and generation costs depend on the connected account. ElevenLabs is not bundled with this skill. The MIT licenses for Mashhad's instructions and the referenced [official ElevenLabs skills](https://github.com/elevenlabs/skills) do not automatically license generated audio; its usage rights follow the [service terms and plan used](https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform).
 
-**الخط مدعوم ومستخدم في الإعلان، لكن ملفاته ليست مرفقة.** يُحمّل كل مستخدم نسخته من [ثمانية](https://font.thmanyah.com/). حقوقه لشركة ثمانية؛ يمنع [ترخيصه](https://font.thmanyah.com/licenses) إعادة توزيع ملفات الخط أو استضافتها للتنزيل. ترخيص MIT لهذا المشروع لا يشمل الخط.
+## Thmanyah font
 
-وجّه `THMANYAH_FONT_DIR` إلى مجلد `thmanyahsans` المحلي أو المجلد الأب الذي يحتويه. مثال PowerShell:
+**Thmanyah Sans is supported and used in the demo, but font files are not included.** Each user must obtain a copy from [Thmanyah's official website](https://font.thmanyah.com/). Thmanyah owns the font; its [license](https://font.thmanyah.com/licenses) prohibits redistributing the files or hosting them for download. This project's MIT license does not cover the font.
+
+Point `THMANYAH_FONT_DIR` to the local `thmanyahsans` directory or its parent directory. For example, in PowerShell:
 
 ```powershell
 $env:THMANYAH_FONT_DIR = 'D:/Fonts/thmanyah typeface/thmanyahsans'
 ```
 
-الأوزان: Regular 400، Medium 500، Bold 700، Black 900. [تفاصيل استخدام العربية والخط](skills/mashhad-video/references/arabic-and-audio.md).
+Weights: Regular 400, Medium 500, Bold 700, Black 900. See the [Arabic typography and audio guidance](skills/mashhad-video/references/arabic-and-audio.md).
 
-## الأدوات المرفقة
+## Included utilities
 
-| الأداة | وظيفتها |
+| Utility | Purpose |
 | --- | --- |
-| `inspect_environment.py` | قراءة الأدوات والتبعيات المتاحة دون تثبيت |
-| `project_manifest.py` | فحص تغطية المشاهد والتداخلات والتوقيت بالإطارات |
-| `media_check.py` | فك ترميز كامل، عدد إطارات دقيق، مقاس، مدة، صوت وشفافية |
+| `inspect_environment.py` | Inspect available tools and dependencies without installing them |
+| `project_manifest.py` | Validate scene coverage, overlaps, and frame timing |
+| `media_check.py` | Check full decoding, exact frame count, dimensions, duration, audio, and transparency |
 
-السكربتات في [مجلد المهارة](skills/mashhad-video/scripts). فحص الوسائط يحتاج FFmpeg وffprobe. [مصدر الإعلان](examples/mashhad-ad) يستخدم HTML Canvas وChromium وFFmpeg، ويحتوي مولد المؤثرات الأصلي وQR المستودع. لا يضم عينات صوتية مقتبسة.
+The utilities live in the [skill scripts directory](skills/mashhad-video/scripts). Media checks require FFmpeg and ffprobe. The [demo source](examples/mashhad-ad) uses HTML Canvas, Chromium, and FFmpeg. It contains the original procedural SFX generator and repository QR code, with no borrowed audio samples.
 
-## حالة التحقق
+## Verification scope
 
-جرت مراجعة البنية والروابط، واختبار أدوات التوقيت والوسائط، وإخراج الإعلان محليًا. رمز QR فُحص من إطارات الفيديو المصدّرة. توافق Claude Code يستند إلى صيغة Agent Skills الموثقة؛ لم يُجر اختبار جلسة داخل Claude Code. التكامل مع كل محرّك متخصص يحتاج اختبارًا في بيئته. سجل المراجعة يحدد نطاق فحص الإطارات والصوت ولا يدعي اختبارًا لم يحدث.
+The repository structure and links, timeline and media utilities, and a local demo render have been checked. The QR code was decoded from exported video frames. Claude Code compatibility is based on its documented Agent Skills format; an interactive Claude Code session has not been tested. Each specialist rendering route still needs verification in its target environment. Review records distinguish technical checks from visual inspection, listening, and user acceptance.
 
-## الحقوق والمساهمون
+## Rights and acknowledgements
 
-**Copyright © 2026 Sultan Alfaifi.** ملفات مَشْهَد الأصلية تحت [MIT](LICENSE). أبقِ إشعار الحقوق والترخيص عند إعادة الاستخدام.
+**Copyright © 2026 Sultan Alfaifi.** Original Mashhad files use the [MIT license](LICENSE). Retain the copyright and license notices when reusing them.
 
-التعليمات أصلية؛ لم تُدمج أجسام مهارات خارجية أو محركاتها داخل الحزمة. نُسبت المراجع والمشاريع الخارجية وأصحابها وتراخيصها في [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) و[SOURCES.json](SOURCES.json). تراخيص تلك المشاريع والأصول مستقلة، ولا توجد شراكة أو رعاية مُدّعاة معها. المؤثرات غير الموسيقية تحتاج إثبات منشأ أو ترخيص أيضًا.
-
-## English
-
-Mashhad is a portable motion-design Agent Skill for **Codex and Claude Code**. It routes to a suitable renderer, coordinates frame-based media handoffs, supports Arabic typography, and separates technical checks from visual and listening review. Audio defaults to **SFX and nonmusical ambience only**. Music requires an explicit request. Optional ElevenLabs guidance uses the connected plugin when available, honors the user's selected voice, and aligns motion to the actual recording. Generated media has separate service and usage rights from the skill's MIT license.
-
-Install from this clone with `python tools/install.py --agent both`. Invoke `$mashhad-video` in Codex or `/mashhad-video` in Claude Code. Video runtimes are separate dependencies. Thmanyah Sans is supported through a local font path and is **not redistributed**. Original project files are © 2026 Sultan Alfaifi, MIT; see the third-party notices for independent upstream rights.
+The instructions are original; external skill bodies and engines are not bundled into this package. Referenced projects, owners, and licenses are credited in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [SOURCES.json](SOURCES.json). Their licenses and asset rights remain independent. No partnership or endorsement is implied. Nonmusical effects also need documented provenance or a valid license.

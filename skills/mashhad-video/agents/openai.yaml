@@ -1,6 +1,6 @@
 interface:
-  display_name: "مَشْهَد"
-  short_description: "إخراج موشن قرافيك عربي من الفكرة إلى فيديو مُراجع"
-  default_prompt: "استخدم $mashhad-video لتحويل فكرتي إلى فيديو موشن قرافيك بإخراج متماسك ومؤثرات صوتية بلا موسيقى، ثم راجع النتيجة المرئية والصوتية."
+  display_name: "Mashhad"
+  short_description: "Direct motion-graphics videos from brief to reviewed film"
+  default_prompt: "Use $mashhad-video to ask about my video direction and audio preferences, then create and review a coherent motion-graphics film without music."
 policy:
   allow_implicit_invocation: true
