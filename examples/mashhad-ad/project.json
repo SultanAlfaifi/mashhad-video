@@ -1,0 +1,23 @@
+{
+  "title": "مَشْهَد — Codex + Claude Code",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration_seconds": 28,
+  "duration_frames": 840,
+  "font": "Thmanyah Sans",
+  "font_path_configuration": "THMANYAH_FONT_DIR",
+  "font_files_bundled": false,
+  "repository_url": "https://github.com/SultanAlfaifi/mashhad-video",
+  "audio_policy": "sfx_and_nonmusical_ambience_only",
+  "audio_source": "audio/compose_sfx.py",
+  "borrowed_samples": [],
+  "music_stems": [],
+  "qr_visible_seconds": [
+    21.6,
+    28
+  ],
+  "runtime": "Chromium + FFmpeg",
+  "license": "MIT",
+  "copyright": "2026 Sultan Alfaifi"
+}

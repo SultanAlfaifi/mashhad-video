@@ -1,0 +1,15 @@
+# Automation engines: Revideo, Rendervid, chuk-motion
+
+Select one when the user needs template batches, a rendering API, or integration into an application. Prefer a working existing implementation. Do not replace an art-directed compositor solely because an engine exposes JSON or MCP: those are control interfaces, not evidence of visual quality.
+
+**Revideo:** TypeScript scenes, a headless `renderVideo()` API, and a React preview player can suit programmatic production. Inspect the project's locked packages and existing renderer script. Use the documented API for that version; no generic `revideo render` command is assumed here. Its repository describes optional parallel rendering and telemetry, so inspect those paths before claiming an entirely local/offline pipeline. Keep workers on the same versions, assets and input snapshot.
+
+**Rendervid:** JSON templates and a capabilities API suit constrained, reusable content. Discover the installed renderer's actual capabilities and validate the template against its schema before rendering. Distinguish frames from seconds; inspect custom component code and URL-loaded modules as executable dependencies. Current repository licensing is FlowHunt Attribution License, not a blanket MIT grant; read the actual terms and retain required attribution. Tool names/counts differ between versions, so discover the connected MCP rather than assuming README names are callable.
+
+**chuk-motion:** A component/design-token wrapper around Remotion can accelerate consistent batches. Its documented project-creation flow may install Remotion automatically. Treat that as setup, using authorization already granted, rather than as harmless capability inspection. The wrapper's license does not replace the underlying Remotion license. Avoid duplicate ownership of an existing Remotion timeline.
+
+For all three, inspect local executable/package availability without installing. Determine a small bounded render entry point from the actual project. Freeze variable inputs and random seeds. Reset/replay state for out-of-order frames; do not parallelize history-dependent effects until baked. Use asset-ready signals rather than arbitrary waiting as proof that images loaded.
+
+The [integration contract](../engine-selection.md) still governs FPS, dimensions, finite frame count, alpha/color interpretation and audio offsets. Validate one representative template at extreme text lengths and mixed Arabic/Latin content, then one small batch. Inspect real decoded video, input-to-output attribution, and audio sync. A successful job ID or JSON response is not a verified media file. Keep cloud deployment and public endpoints outside a local-render request unless authorized.
+
+Primary sources reviewed 2026-10-09: [Revideo](https://github.com/midrender/revideo), [Rendervid](https://github.com/QualityUnit/rendervid), [Rendervid license](https://github.com/QualityUnit/rendervid/blob/main/LICENSE), [chuk-motion](https://github.com/IBM/chuk-motion). These adapters are integration guidance, not local runtime certification.

@@ -1,0 +1,249 @@
+{
+  "title": "Mashhad original SFX-only soundtrack",
+  "duration_seconds": 28.0,
+  "sample_rate": 48000,
+  "channels": 2,
+  "encoding": "24-bit signed PCM WAV",
+  "seed": 7129069,
+  "creation_method": "Deterministic NumPy random noise, broad spectral filtering, shaped envelopes and panning",
+  "borrowed_samples": [],
+  "prior_music_inputs": [],
+  "music": false,
+  "tonal_oscillators": false,
+  "melody_chords_beats": false,
+  "rights_note": "Original procedural composition for Mashhad; no borrowed recordings. This documents provenance, not a legal guarantee or automated copyright clearance.",
+  "listening_review": "Not performed by this generating agent; technical measurements do not substitute for listening.",
+  "loudness": {
+    "integrated_lufs": -21.6,
+    "true_peak_dbtp": -5.93,
+    "loudness_range_lu": 15.5,
+    "threshold_lufs": -35.84
+  },
+  "applied_gain_db": 10.92,
+  "sample_peak_dbfs": -5.939,
+  "rms_dbfs": -30.719,
+  "checks": {
+    "decoded_frames": 1344000,
+    "expected_frames": 1344000,
+    "duration_exact": true,
+    "sample_rate_48000": true,
+    "channels_stereo": true,
+    "clipped_sample_count": 0,
+    "first_sample_zero": true,
+    "last_200ms_zero": true,
+    "true_peak_below_minus_2_dbtp": true,
+    "decode_errors": 0
+  },
+  "cues": [
+    {
+      "start_seconds": 0.0,
+      "duration_seconds": 0.5,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": -0.22,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 0.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 1.52,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": -0.18,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 2.12,
+      "duration_seconds": 0.58,
+      "kind": "restrained_air_ambience",
+      "description": "Very low, non-tonal air texture with zero-ended fade",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 3.0,
+      "duration_seconds": 0.6,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": 0.18,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 3.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 4.38,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": 0.14,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 5.03,
+      "duration_seconds": 0.55,
+      "kind": "restrained_air_ambience",
+      "description": "Very low, non-tonal air texture with zero-ended fade",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 6.0,
+      "duration_seconds": 0.56,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": -0.12,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 6.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 7.74,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": -0.12,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 8.91,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": 0.12,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 10.0,
+      "duration_seconds": 0.68,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": 0.21,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 10.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 11.41,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": -0.1,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 12.07,
+      "duration_seconds": 0.76,
+      "kind": "restrained_air_ambience",
+      "description": "Very low, non-tonal air texture with zero-ended fade",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 14.0,
+      "duration_seconds": 0.61,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": -0.17,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 14.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 15.66,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": 0.16,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 16.27,
+      "duration_seconds": 0.77,
+      "kind": "restrained_air_ambience",
+      "description": "Very low, non-tonal air texture with zero-ended fade",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 18.0,
+      "duration_seconds": 0.65,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": 0.14,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 18.07,
+      "duration_seconds": 0.2,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 19.17,
+      "duration_seconds": 0.105,
+      "kind": "tactile_tick",
+      "description": "Soft non-pitched object movement",
+      "pan": -0.13,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 21.0,
+      "duration_seconds": 0.66,
+      "kind": "soft_air_transition",
+      "description": "Brief broad-band air movement, no pitch",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 21.07,
+      "duration_seconds": 0.25,
+      "kind": "muted_noise_impact",
+      "description": "Small cushioned impact without bass oscillator",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    },
+    {
+      "start_seconds": 23.24,
+      "duration_seconds": 4.56,
+      "kind": "restrained_air_ambience",
+      "description": "Very low, non-tonal air texture with zero-ended fade",
+      "pan": 0,
+      "source": "original procedural filtered random noise"
+    }
+  ],
+  "sha256": "df0454d7d986d417f7eeab5a754b1e043b48abce1d1bab27a5ec9f47bf58cba9",
+  "ffmpeg_version": "ffmpeg version 9.0-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+}

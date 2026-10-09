@@ -1,0 +1,9 @@
+{
+  "name": "mashhad-promotional-film",
+  "private": true,
+  "version": "1.2.0",
+  "license": "MIT",
+  "description": "Deterministic Arabic promotional film with original nonmusical SFX",
+  "scripts": {"proof": "node render.cjs proof", "render": "node render.cjs full", "encode": "node encode.cjs", "verify-qr": "node verify-qr.cjs"},
+  "devDependencies": {"playwright": "1.62.1", "sharp": "0.35.5", "jsqr": "1.4.0"}
+}

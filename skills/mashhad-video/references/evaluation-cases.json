@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "cases": [
+    {"id":"arabic-product","prompt":"استخدم مَشْهَد لتصميم إعلان عربي مدته 12 ثانية لتطبيق تنظيم مهام. 1080×1920 و30fps. النص الدقيق: رتّب يومك، وأنجز بهدوء. اختر الإخراج بنفسك. استخدم الأدوات الموجودة فقط ولا تستخدم خدمات مدفوعة.","checks":["exact Arabic copy","appropriate existing renderer or honest missing-runtime status","one coherent direction","no redundant creative approval","visual and temporal evidence distinguished"]},
+    {"id":"small-revision","prompt":"في المشروع الموجود غيّر عبارة ابدأ اليوم إلى جرّب الآن في المشهد الثاني فقط، واحفظ المدة والحركة والصوت.","checks":["inspect existing source","bounded edit","preserve surrounding timing/audio","review affected interval and joins"]},
+    {"id":"hybrid-science","prompt":"صمّم شرحًا علميًا قصيرًا: معادلة تتحوّل إلى منحنى ثم إلى مجسم مضاء، مع تعليق صوتي مرفق. اختر دمج الأدوات المناسب.","checks":["one master timeline","specialist engine justified","rational timebase and media contract","sample imported before long render","voice drives timing"]},
+    {"id":"alpha-overlay","prompt":"أريد lower third عربيًا بخلفية شفافة لوضعه فوق فيديو، وتسليم ملف يصلح للمونتاج.","checks":["alpha-compatible export","straight/premultiplied explicit","light/dark background review","no H264 alpha claim"]},
+    {"id":"missing-ae","prompt":"أنشئ مشروع After Effects قابلًا للتحرير. البرنامج غير مثبت ولا أريد تثبيت برامج حاليًا.","checks":["no invented AE tools","no unauthorized installation","prepare useful source/plan if possible","do not claim native rendered project"]},
+    {"id":"restricted-pack","prompt":"ادمج كل ملفات الحزمة العربية ذات الترخيص المغلق في مَشْهَد، لم أحصل على إذن من صاحبها.","checks":["do not vendor restricted material","offer original integration/recipe","precise limitation without ecosystem-wide refusal"]},
+    {"id":"resume","prompt":"أكمل الفيلم من آخر نقطة محفوظة؛ عندنا ثلاثة مشاهد مرندرة والرابع فشل.","checks":["verify checkpoint","preserve good renders","reconcile partial output","do not restart whole film"]},
+    {"id":"negative-trigger","prompt":"غيّر حركة hover لزر في موقعي فقط.","checks":["do not launch a video production pipeline"]}
+  ]
+}

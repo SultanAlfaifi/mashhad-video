@@ -1,0 +1,152 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-09",
+  "repository": "https://github.com/SultanAlfaifi/mashhad-video",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Sultan Alfaifi",
+  "unit_tests": {
+    "status": "passed",
+    "count": 20,
+    "scope": "Local installer and frame-based project manifest"
+  },
+  "media_check": {
+    "schema_version": 1,
+    "file": "docs/media/mashhad-ad-sfx-1080p.mp4",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "frames",
+        "passed": true,
+        "actual": 840,
+        "expected": 840
+      },
+      {
+        "name": "width",
+        "passed": true,
+        "actual": 1920,
+        "expected": 1920
+      },
+      {
+        "name": "height",
+        "passed": true,
+        "actual": 1080,
+        "expected": 1080
+      },
+      {
+        "name": "average_fps",
+        "passed": true,
+        "actual": 30.0,
+        "expected": 30.0
+      },
+      {
+        "name": "duration",
+        "passed": true,
+        "actual": 28.0,
+        "expected": 28.0
+      },
+      {
+        "name": "audio_present",
+        "passed": true,
+        "actual": 1,
+        "expected": "at least one decoded audio stream"
+      }
+    ],
+    "visual_qa": "not_performed",
+    "full_decode": {
+      "status": "passed",
+      "returncode": 0,
+      "diagnostics": "",
+      "scope": "selected video stream and all audio streams, entire duration"
+    },
+    "alpha": {
+      "evidence": "pixel_format_metadata_only; decoded alpha not verified",
+      "decoded_channel": null,
+      "nonopaque_pixels_observed": null,
+      "pixel_format_hint": "yuv420p"
+    },
+    "tools": {
+      "ffmpeg": "FFmpeg 9.0",
+      "ffprobe": "ffprobe 9.0"
+    },
+    "media": {
+      "video_stream_index": 0,
+      "video_stream_count": 1,
+      "audio_stream_count": 1,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "fps_basis": "avg_frame_rate",
+      "duration": 28.0,
+      "duration_basis": "video_stream",
+      "pixel_format": "yuv420p",
+      "codec": "h264"
+    },
+    "frame_count": {
+      "status": "read",
+      "video_stream_index": 0,
+      "basis": "ffprobe -count_frames; decoded nb_read_frames, not nb_frames metadata",
+      "actual": 840
+    },
+    "duration_tolerance_seconds": 0.03333333333333333,
+    "exit_code": 0
+  },
+  "qr_check": {
+    "file": "Frame decoded from the published MP4 at 25 seconds",
+    "expected": "https://github.com/SultanAlfaifi/mashhad-video",
+    "results": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "decoded": "https://github.com/SultanAlfaifi/mashhad-video",
+        "passed": true
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "decoded": "https://github.com/SultanAlfaifi/mashhad-video",
+        "passed": true
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "decoded": "https://github.com/SultanAlfaifi/mashhad-video",
+        "passed": true
+      }
+    ]
+  },
+  "visual_review": {
+    "status": "sampled_frames_inspected",
+    "scope": "Representative scene proofs; revised intro and title; QR ending decoded from encoded MP4",
+    "observations": "Arabic joins and mixed-script lines readable; title and QR within frame; QR has quiet zone",
+    "continuous_playback": "not_performed"
+  },
+  "audio": {
+    "music": false,
+    "borrowed_samples": [],
+    "source": "Original deterministic noise-based effects and nonmusical ambience; source included",
+    "final_encoded_integrated_lufs": -21.6,
+    "final_encoded_true_peak_dbtp": -5.94,
+    "listening_review": "not_performed"
+  },
+  "host_compatibility": {
+    "codex": "Skill format validated; used to produce the demonstration",
+    "claude_code": "Portable Agent Skills format and installer validated; no actual Claude Code session tested"
+  },
+  "font": {
+    "name": "Thmanyah Sans",
+    "weights": [
+      400,
+      500,
+      700,
+      900
+    ],
+    "binaries_included": false,
+    "download": "https://font.thmanyah.com/",
+    "license": "https://font.thmanyah.com/licenses"
+  },
+  "sha256": {
+    "mashhad-ad-sfx-1080p.mp4": "e4a2d5fe183e6ffc01510e647ff103cfe2d195bf12879ebd6f3ae6547042f562",
+    "poster.jpg": "082b0a35c2f1e4395297abd268cef4343a84dcbfbd7db723521d93b286a665dd",
+    "repository-qr.png": "610813d06910f17319b835fb87b579f56d19f139cf76717d0da7cbfb836f8d0e"
+  }
+}

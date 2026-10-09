@@ -1,0 +1,6 @@
+interface:
+  display_name: "مَشْهَد"
+  short_description: "إخراج موشن قرافيك عربي من الفكرة إلى فيديو مُراجع"
+  default_prompt: "استخدم $mashhad-video لتحويل فكرتي إلى فيديو موشن قرافيك بإخراج متماسك ومؤثرات صوتية بلا موسيقى، ثم راجع النتيجة المرئية والصوتية."
+policy:
+  allow_implicit_invocation: true

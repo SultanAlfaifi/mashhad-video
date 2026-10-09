@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-09",
+  "scope": "Credits for researched integration references and external tools. Not a dependency lockfile. No upstream skill bodies, runtimes, fonts or example media are vendored.",
+  "sources": [
+    {
+      "project": "remotion-dev/skills",
+      "url": "https://github.com/remotion-dev/skills",
+      "maintainer_account": "remotion-dev",
+      "role": "Official Remotion workflow and API reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "No root license found at checked commit; reuse terms unconfirmed",
+      "copyright_notices_observed": [],
+      "license_evidence_url": null,
+      "license_blob_sha": null,
+      "repository_commit_observed": "32b241b97f4e0e4ab61fe9a41b05e6e64503f8c5",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "greensock/gsap-skills",
+      "url": "https://github.com/greensock/gsap-skills",
+      "maintainer_account": "greensock",
+      "role": "GSAP timeline, easing, plugin and deterministic-seeking reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 GreenSock"
+      ],
+      "license_evidence_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+      "license_blob_sha": "fa2fe218371ee47b741db9d0fa7cf17cddc03eb8",
+      "repository_commit_observed": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Liamrjohnston/remotion-motion-graphics-skill",
+      "url": "https://github.com/Liamrjohnston/remotion-motion-graphics-skill",
+      "maintainer_account": "Liamrjohnston",
+      "role": "Short product-film, camera and visual-review inspiration",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 Promptible"
+      ],
+      "license_evidence_url": "https://github.com/Liamrjohnston/remotion-motion-graphics-skill/blob/b860c7921f2220b9e2a84e815ba0ae7b10858f08/LICENSE",
+      "license_blob_sha": "1927b87c8e6b8b246bed78a883880817faf89f67",
+      "repository_commit_observed": "b860c7921f2220b9e2a84e815ba0ae7b10858f08",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Barty-Bart/motion-graphics",
+      "url": "https://github.com/Barty-Bart/motion-graphics",
+      "maintainer_account": "Barty-Bart",
+      "role": "Continuous B-roll, morphing and alpha-delivery workflow reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT software; Geist fonts OFL-1.1; Lucide icon paths ISC",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 Bart"
+      ],
+      "license_evidence_url": "https://github.com/Barty-Bart/motion-graphics/blob/83355bb58f78cdb486d6a00f6cfa22e40e538f03/LICENSE",
+      "license_blob_sha": "5088d7b73eda8bdf7acdefe02a5d31e82bbfe495",
+      "repository_commit_observed": "83355bb58f78cdb486d6a00f6cfa22e40e538f03",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "maintainer_account": "heygen-com",
+      "role": "Optional HTML video renderer and specialist workflow reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Apache-2.0",
+      "copyright_notices_observed": [
+        "Copyright 2026 HeyGen, Inc."
+      ],
+      "license_evidence_url": "https://github.com/heygen-com/hyperframes/blob/46f6cb356785bed79e1ce7b79d7e7accc697786a/LICENSE",
+      "license_blob_sha": "ae06b37e1c5116ccfaa615ac25ec1aabf5658d8c",
+      "repository_commit_observed": "46f6cb356785bed79e1ce7b79d7e7accc697786a",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "heygen-com/hyperframes-community-skills",
+      "url": "https://github.com/heygen-com/hyperframes-community-skills",
+      "maintainer_account": "heygen-com",
+      "role": "Optional collage, painterly and depth-caption recipe references",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Apache-2.0",
+      "copyright_notices_observed": [],
+      "license_evidence_url": "https://github.com/heygen-com/hyperframes-community-skills/blob/ba7a0bb6d3567d124c51f6074625043bfe0b32eb/LICENSE",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "repository_commit_observed": "ba7a0bb6d3567d124c51f6074625043bfe0b32eb",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "VideoZero/skills",
+      "url": "https://github.com/VideoZero/skills",
+      "maintainer_account": "VideoZero",
+      "role": "Motion Canvas agent-preview and control reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Apache-2.0",
+      "copyright_notices_observed": [
+        "Copyright 2026 VIDEOZERO TECHNOLOGIES LTD"
+      ],
+      "license_evidence_url": "https://github.com/VideoZero/skills/blob/670ff96af6149f0ac8850380a466f073471e600c/LICENSE",
+      "license_blob_sha": "2d33f8be1757457a2cee16abe8a3fa63358eb537",
+      "repository_commit_observed": "670ff96af6149f0ac8850380a466f073471e600c",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "a-y-ibrahim/after-effects-mcp",
+      "url": "https://github.com/a-y-ibrahim/after-effects-mcp",
+      "maintainer_account": "a-y-ibrahim",
+      "role": "Optional After Effects bridge, including Arabic integration reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2025 Dakkshin (original work)",
+        "Copyright (c) 2026 Abdelrahman Youssef (enhanced multilingual / Arabic edition)"
+      ],
+      "license_evidence_url": "https://github.com/a-y-ibrahim/after-effects-mcp/blob/e9ffbed9f675a3ac31a4295c83abfd1fb4a7b3f5/LICENSE",
+      "license_blob_sha": "be6faea9ff372036360e346efb1d1d9b6e9bbb4b",
+      "repository_commit_observed": "e9ffbed9f675a3ac31a4295c83abfd1fb4a7b3f5",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "yumehiko/ae-agent-skills",
+      "url": "https://github.com/yumehiko/ae-agent-skills",
+      "maintainer_account": "yumehiko",
+      "role": "Optional native After Effects workflow reference",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 yumehiko"
+      ],
+      "license_evidence_url": "https://github.com/yumehiko/ae-agent-skills/blob/760cc5b135a0a5f5e5f3e7427ec51af35488d25e/LICENSE",
+      "license_blob_sha": "87bd63f3e7fcbc1e1211df91324685d4cf73d354",
+      "repository_commit_observed": "760cc5b135a0a5f5e5f3e7427ec51af35488d25e",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Engine-Room-Games/after-effects-mcp",
+      "url": "https://github.com/Engine-Room-Games/after-effects-mcp",
+      "maintainer_account": "Engine-Room-Games",
+      "role": "Alternative After Effects bridge surveyed",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 Engine Room"
+      ],
+      "license_evidence_url": "https://github.com/Engine-Room-Games/after-effects-mcp/blob/97ec53c6e7749bf878914742b8c2c8972c133283/LICENSE",
+      "license_blob_sha": "08ecedc78c6e01f568fb73419adcf615c17699b5",
+      "repository_commit_observed": "97ec53c6e7749bf878914742b8c2c8972c133283",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "remotion-dev/remotion",
+      "url": "https://github.com/remotion-dev/remotion",
+      "maintainer_account": "remotion-dev",
+      "role": "Optional React video compositor",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Remotion License (custom, entity eligibility applies)",
+      "copyright_notices_observed": [
+        "Copyright © 2026 [Remotion](https://www.remotion.dev)"
+      ],
+      "license_evidence_url": "https://github.com/remotion-dev/remotion/blob/11bafecf07a819c171275ec05744c8edd5453527/LICENSE.md",
+      "license_blob_sha": "d655e2df830bbe19285e55607aefff636ed93d7b",
+      "repository_commit_observed": "11bafecf07a819c171275ec05744c8edd5453527",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "motion-canvas/motion-canvas",
+      "url": "https://github.com/motion-canvas/motion-canvas",
+      "maintainer_account": "motion-canvas",
+      "role": "Optional explanatory/vector animation engine",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2022 motion-canvas"
+      ],
+      "license_evidence_url": "https://github.com/motion-canvas/motion-canvas/blob/7b91435c301d530351dcf5ebb91dd139c002e405/LICENSE",
+      "license_blob_sha": "b30f04e173f68773714b7d9e2652caecbeec53f9",
+      "repository_commit_observed": "7b91435c301d530351dcf5ebb91dd139c002e405",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "ManimCommunity/manim",
+      "url": "https://github.com/ManimCommunity/manim",
+      "maintainer_account": "ManimCommunity",
+      "role": "Optional mathematical animation engine",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2018 3Blue1Brown LLC"
+      ],
+      "license_evidence_url": "https://github.com/ManimCommunity/manim/blob/a6d5cc02b430fb57d22add51236b6406fbf19d91/LICENSE",
+      "license_blob_sha": "774f5965700a59c2c7df2d4c234209d1da333c3e",
+      "repository_commit_observed": "a6d5cc02b430fb57d22add51236b6406fbf19d91",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "ahujasid/mcp-for-blender",
+      "url": "https://github.com/ahujasid/mcp-for-blender",
+      "maintainer_account": "ahujasid",
+      "role": "Optional Blender control bridge",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2025 Siddharth Ahuja"
+      ],
+      "license_evidence_url": "https://github.com/ahujasid/mcp-for-blender/blob/7a0373ec9199183cb460068c4f96aed9c579fb4f/LICENSE",
+      "license_blob_sha": "82e98f0ee1ef20d31f852ad43c91020cc51f82ea",
+      "repository_commit_observed": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "mrdoob/three.js",
+      "url": "https://github.com/mrdoob/three.js",
+      "maintainer_account": "mrdoob",
+      "role": "Optional browser 3D engine",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright © 2010-2026 three.js authors"
+      ],
+      "license_evidence_url": "https://github.com/mrdoob/three.js/blob/427a62aff4444d63fc765db64548a7373d1331fa/LICENSE",
+      "license_blob_sha": "8ada2a5f982916b0ba4b7a0aa7de347587e745d7",
+      "repository_commit_observed": "427a62aff4444d63fc765db64548a7373d1331fa",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "midrender/revideo",
+      "url": "https://github.com/midrender/revideo",
+      "maintainer_account": "midrender",
+      "role": "Optional headless video renderer",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2022 motion-canvas"
+      ],
+      "license_evidence_url": "https://github.com/midrender/revideo/blob/b5de67a009a55aa2768a1e178b0446b2479a0b4e/LICENSE",
+      "license_blob_sha": "b30f04e173f68773714b7d9e2652caecbeec53f9",
+      "repository_commit_observed": "b5de67a009a55aa2768a1e178b0446b2479a0b4e",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "QualityUnit/rendervid",
+      "url": "https://github.com/QualityUnit/rendervid",
+      "maintainer_account": "QualityUnit",
+      "role": "Optional template rendering engine",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "FlowHunt Attribution License (custom)",
+      "copyright_notices_observed": [
+        "Copyright (c) 2024 QualityUnit / FlowHunt"
+      ],
+      "license_evidence_url": "https://github.com/QualityUnit/rendervid/blob/bcacaae8b56554c774538369db6adfa657da3a3d/LICENSE",
+      "license_blob_sha": "0785f0ce3d75aff56837f55eb4b25d9de8b8d08f",
+      "repository_commit_observed": "bcacaae8b56554c774538369db6adfa657da3a3d",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "IBM/chuk-motion",
+      "url": "https://github.com/IBM/chuk-motion",
+      "maintainer_account": "IBM",
+      "role": "Optional Remotion component and automation wrapper",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Apache-2.0",
+      "copyright_notices_observed": [],
+      "license_evidence_url": "https://github.com/IBM/chuk-motion/blob/d94660ccc8a6b50eb752fe8e992bf3e065bf1efa/LICENSE",
+      "license_blob_sha": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+      "repository_commit_observed": "d94660ccc8a6b50eb752fe8e992bf3e065bf1efa",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "imMamdouhaboammar/motion-graphics-skills",
+      "url": "https://github.com/imMamdouhaboammar/motion-graphics-skills",
+      "maintainer_account": "imMamdouhaboammar",
+      "role": "Excluded proprietary pack; license boundary only",
+      "relationship": "excluded",
+      "bundled_upstream_code": false,
+      "license_observed": "Proprietary; all rights reserved; excluded",
+      "copyright_notices_observed": [
+        "Copyright (c) 2026 Mamdouh Aboammar (@imMamdouhaboammar)."
+      ],
+      "license_evidence_url": "https://github.com/imMamdouhaboammar/motion-graphics-skills/blob/29919c1ff91d0e0a242ffc0d085b838fa9575584/LICENSE",
+      "license_blob_sha": "75ec2c227a02bf86a3053014964c65289be563a9",
+      "repository_commit_observed": "29919c1ff91d0e0a242ffc0d085b838fa9575584",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Thmanyah Sans",
+      "url": "https://font.thmanyah.com/",
+      "maintainer_account": "Thmanyah Publishing and Distribution",
+      "role": "Preferred Arabic font, obtained separately by each user; rendered typography in the promotional film",
+      "relationship": "local_external_font_not_redistributed",
+      "bundled_upstream_code": false,
+      "license_observed": "Thmanyah Font License (custom)",
+      "copyright_notices_observed": [
+        "Copyright © 2016 Thmanyah Publishing and Distribution"
+      ],
+      "license_evidence_url": "https://font.thmanyah.com/licenses",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "GSAP runtime",
+      "url": "https://gsap.com/",
+      "maintainer_account": "Webflow / GreenSock",
+      "role": "Optional animation runtime; different license from gsap-skills",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "Standard No Charge GSAP License (custom)",
+      "copyright_notices_observed": [
+        "Copyright © 2025 Webflow"
+      ],
+      "license_evidence_url": "https://gsap.com/community/standard-license/",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Lottie Web",
+      "url": "https://github.com/airbnb/lottie-web",
+      "maintainer_account": "airbnb / Bodymovin contributors",
+      "role": "Optional vector-animation runtime",
+      "relationship": "reference_only_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT",
+      "copyright_notices_observed": [
+        "Copyright (c) 2015 Bodymovin"
+      ],
+      "license_evidence_url": "https://github.com/airbnb/lottie-web/blob/master/LICENSE.md",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "FFmpeg",
+      "url": "https://ffmpeg.org/",
+      "maintainer_account": "FFmpeg developers",
+      "role": "External local encoding, decoding and media validation tool",
+      "relationship": "external_tool_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "LGPL-2.1-or-later core; GPL and other obligations depend on build configuration",
+      "copyright_notices_observed": [],
+      "license_evidence_url": "https://ffmpeg.org/legal.html",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "ReportLab 4.4.9",
+      "url": "https://pypi.org/project/reportlab/4.4.9/",
+      "maintainer_account": "ReportLab Inc.; Andy Robinson, Robin Becker, ReportLab team and community",
+      "role": "Imported library for the promotional film QR matrix; no library source is vendored",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "BSD-3-Clause as read in installed distribution license",
+      "copyright_notices_observed": [
+        "Copyright (c) 2000-2024 ReportLab Inc. (installed LICENSE); package metadata also states 2000-2025"
+      ],
+      "license_evidence_url": "https://pypi.org/project/reportlab/4.4.9/",
+      "local_evidence_file": "reportlab-4.4.9.dist-info/licenses/LICENSE",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "ReportLab QR encoder",
+      "url": "https://pypi.org/project/reportlab/4.4.9/",
+      "maintainer_account": "Open End AB; Anders Hammarquist; Sam Curren; Kazuhiko Arase",
+      "role": "QR encoder used through ReportLab; credits read in the installed module header",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT as declared in qrencoder.py header",
+      "copyright_notices_observed": [
+        "Copyright (c) 2014 Open End AB",
+        "Copyright (c) 2009 Kazuhiko Arase"
+      ],
+      "license_evidence_url": "https://pypi.org/project/reportlab/4.4.9/",
+      "local_evidence_file": "reportlab/graphics/barcode/qrencoder.py",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Pillow",
+      "url": "https://python-pillow.org/",
+      "maintainer_account": "Pillow contributors; Secret Labs AB; Fredrik Lundh",
+      "role": "External imaging library for locally rendered frames",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "license_observed": "MIT-CMU; see full Pillow license for inherited notices",
+      "copyright_notices_observed": [
+        "Copyright © 1997-2011 by Secret Labs AB",
+        "Copyright © 1995-2011 by Fredrik Lundh and contributors",
+        "Copyright © 2010 by Jeffrey 'Alex' Clark and contributors"
+      ],
+      "license_evidence_url": "https://github.com/python-pillow/Pillow/blob/main/LICENSE",
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Playwright",
+      "version": "1.62.1",
+      "url": "https://github.com/microsoft/playwright",
+      "license_observed": "Apache-2.0",
+      "role": "external browser frame renderer",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "NumPy",
+      "version": null,
+      "url": "https://numpy.org/doc/stable/license.html",
+      "license_observed": "BSD-3-Clause",
+      "role": "external numerical SFX synthesis library",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "Sharp",
+      "version": "0.35.5",
+      "url": "https://github.com/lovell/sharp/blob/main/LICENSE",
+      "license_observed": "Apache-2.0",
+      "role": "external image decoding for QR tests",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "checked_on": "2026-10-09"
+    },
+    {
+      "project": "jsQR",
+      "version": "1.4.0",
+      "url": "https://github.com/cozmo/jsQR",
+      "license_observed": "Apache-2.0",
+      "role": "external independent QR decoder",
+      "relationship": "external_dependency_not_vendored",
+      "bundled_upstream_code": false,
+      "checked_on": "2026-10-09"
+    }
+  ],
+  "architecture_references": [
+    {
+      "project": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "role": "Portable SKILL.md structure and progressive disclosure"
+    },
+    {
+      "project": "OpenAI skill architecture guidance",
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "role": "Focused entrypoint and conditional reference loading"
+    },
+    {
+      "project": "OpenAI skill evaluation guidance",
+      "url": "https://developers.openai.com/blog/eval-skills",
+      "role": "Behavioral evaluation and observed evidence"
+    }
+  ]
+}
